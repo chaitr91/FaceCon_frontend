@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shamanth.facecon.CreateProfile">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:id="@+id/tvHeading"
+        android:text="Touch the icon below to upload file to server"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/ivAttachment"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/button"
+        android:layout_toEndOf="@+id/button"
+        android:onClick="Select_Image"
+        android:src="@drawable/facecon" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:layout_below="@+id/ivAttachment"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/b_upload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#039be5"
+        android:gravity="center"
+        android:onClick="upload"
+        android:text="Upload"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:text="Create Profile"
+        android:gravity="center"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="22dp"
+        android:text="First Name" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:text="Last Name" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView7"
+        android:text="Interests" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:text="Email_ID" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView9"
+        android:text="Phone Number" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_toEndOf="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="First_Name" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editText"
+        android:layout_below="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Last_Name" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView7"
+        android:layout_toEndOf="@+id/textView8"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Profession" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/editText4"
+        android:layout_toEndOf="@+id/textView9"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Passion" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@+id/editText5"
+        android:layout_below="@+id/editText5"
+        android:ems="10"
+        android:inputType="textNoSuggestions|textPersonName"
+        android:text="Phone Number" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView10"
+        android:text="Profile Pic" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/textView10"
+        android:layout_toEndOf="@+id/textView3"
+        android:onClick="Click_Image"
+        android:text="Click Image" />
+
+</RelativeLayout>
