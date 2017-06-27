@@ -53,7 +53,7 @@ import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class CreateProfile extends AppCompatActivity {
+public class CreateProfile extends AppCompatActivity { //creates a profile when "create profile" button is pressed
     private String pictureImagePath = "";
     private static final int PICK_FILE_REQUEST = 1;
     private static final int WRITE_PERMISSION = 0x01;
